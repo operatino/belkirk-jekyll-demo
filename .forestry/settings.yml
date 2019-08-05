@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: test
-  label: test
-  match: "**/*"
 - type: heading
   label: Content
 - type: jekyll-posts
@@ -28,6 +24,9 @@ sections:
   match: "*"
   templates:
   - person
+- type: document
+  path: test
+  label: test
 - type: directory
   path: _projects
   label: Projects
